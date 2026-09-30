@@ -1,9 +1,12 @@
 const searchInput = document.querySelector(".search-input");
 const searchableItems = document.querySelectorAll(".searchable");
 const searchResults = document.querySelector(".search-results");
+const searchForm = document.querySelector(".search-wrapper");
 
-searchInput.addEventListener("input", () => {
+searchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
     const searchTerm = searchInput.value.trim().toLowerCase();
+        
 
     if (searchTerm === "") {
         return;
@@ -14,11 +17,18 @@ searchInput.addEventListener("input", () => {
     searchableItems.forEach((item) => {
         const itemText = item.textContent.trim().toLowerCase();
         const words = itemText.split(/\s+/);
+        const isMultiWord = searchTerm.includes(" ");
 
-        const isMatch = words.some((word) => {
-            return word.startsWith(searchTerm);
-        });
+        let isMatch;
 
+        if (isMultiWord) {
+            isMatch = itemText.includes(searchTerm);
+        } else {
+            isMatch = words.some((word) => {
+                return word === searchTerm;
+            });
+        }
+ 
         if (isMatch) {
             matches.push(item);
         }
