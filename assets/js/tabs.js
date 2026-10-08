@@ -1,5 +1,5 @@
-const buttons = document.querySelectorAll(".btn-tab");
-const panels = document.querySelectorAll(".profile-content");
+const buttons = document.querySelectorAll(".tab-btn");
+const panels = document.querySelectorAll(".profile-container, .pscontent-wrapper");
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -20,10 +20,5 @@ buttons.forEach((button) => {
                 button.classList.remove("active");
             }
         })
-
-        if (selectedTab === "profile") {
-            resetTerminal();
-            startTerminal();
-        }
     })
 })

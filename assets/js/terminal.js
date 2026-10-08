@@ -1,4 +1,6 @@
 const commands = document.querySelectorAll(".t-command");
+const runButton = document.querySelector(".terminal-run");
+
 let typingInterval;
 let outputTimeout;
 
@@ -43,8 +45,17 @@ function startTerminal() {
         typeCommand(commands[1], () => {
             typeCommand(commands[2], () => {
                 typeCommand(commands[3], () => {
+                    runButton.disabled = false;
+                    runButton.textContent = "Replay";
                 });
             });
         });
     });
 }
+
+runButton.addEventListener("click", () => {
+    runButton.disabled = true;
+
+    resetTerminal();
+    startTerminal();
+});
