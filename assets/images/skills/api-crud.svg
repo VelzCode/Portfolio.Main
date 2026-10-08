@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">API and CRUD</title>
+  <g fill="none" stroke="#a497cb" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="22" y="15" width="84" height="28" rx="7"/>
+    <path d="M36 29h2m13 0h2m13 0h2"/>
+    <path d="M44 60L25 77l19 17m40-34 19 17-19 17M72 56L56 98"/>
+    <path stroke="#e3ad62" d="M23 112h82m-9-9 9 9-9 9"/>
+  </g>
+</svg>
