@@ -7,6 +7,7 @@ let outputTimeout;
 function typeCommand(command, finished) {
     const commandText = command.dataset.command;
     const entry = command.closest(".terminal-entry");
+    entry.classList.add("visible");
     const output = entry.querySelector(".terminal-output");
     command.classList.add("typing");
 
@@ -36,6 +37,7 @@ function resetTerminal() {
         command.classList.remove("typing");
         const entry = command.closest(".terminal-entry");
         const output = entry.querySelector(".terminal-output");
+        entry.classList.remove("visible");
         output.classList.remove("visible");
     })
 }
@@ -45,9 +47,9 @@ function startTerminal() {
         typeCommand(commands[1], () => {
             typeCommand(commands[2], () => {
                 typeCommand(commands[3], () => {
-                    runButton.disabled = false;
-                    runButton.textContent = "Replay";
-                });
+                runButton.disabled = false;
+                runButton.textContent = "Replay";
+                })
             });
         });
     });

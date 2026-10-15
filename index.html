@@ -1,194 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="./assets/css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <main>
-            <!-- Navigation & Hero section -->
-            <section class="nav-wrapper">
-                <!-- Hero -->
-                <div class="nav-hero">
-                    <div class="nhero-hgroup">
-                        <h2 class="hero-title">Modern Portfolio</h2>
-                        <h2 class="hero-title">Developer Systems</h2>
-                    </div>
-                    <div class="nhero-content">
-                        <h2 class="nhcontent-header">Designed for Clients, by a Developer.<br>
-                        Sleak, Fast, Responsive.</h2>
-                        <ul class="nhcontent-list">
-                            <li class="searchable">ph</li>
-                            <li class="searchable">ph</li>
-                            <li class="searchable">ph</li>
-                            <li class="searchable">ph</li>
-                            <li class="searchable">ph</li>
-                            <li class="searchable">ph</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Navigation -->
-                <div class="navbar-section">
-                    <div class="navbar">
-                        <div class="links-wrapper">
-                            <a href="#">Profile</a>
-                            <a href="#">Skills</a>
-                            <a href="#">Projects</a>
-                            <a href="#">Get in Touch</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="content-wrapper">
+            <div class="hero-container">
+                <img src="./assets/images/mobile2.png" alt="Mobile Phone Logo">
+                <div class="hc-header-container">
+                    <!-- Status Bar -->
+                    <div class="phone-status">
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
-                        <!-- <div class="search-wrapper">
-                            <a href="#">Search Placeholder</a>
-                            <input class="search-input" type="search" placeholder="Search...">
-                        </div> -->
-                    </div>
-                    <hr class="navbar-hr">
-                <!-- About & Terminal Section -->
-                <div class="about-section-content">
-                    <div class="content-container">
-                        <!-- About Content -->
-                        <div class="content-l">
-                            <div class="header-group searchable">
-                                <h1 class="about-main-header">Freelance and Remote Developer</h1>
-                            </div>
-                            <div class="paragraph-box searchable">
-                                <p class="about-paragraph">Hi, I'm Jason, a Developer focused on building responsive web applications and user interfaces, with experience across FrontEnd, server-side and database projects.</p>
-                                <p class="about-paragraph"><em>I recently completed a career change from Logistics, bringing with me strong planning skills and an excellent eye for detail. I'm really passionate about creating projects, collaborating with others and delivering an excellent reliable service to all my clients and future contacts.</em></p>
-                                <p class="about-paragraph">The tech stack I used for this section are listed in a scroll bar below, my full repotoire of skills are further down near the Projects section.</p>
-                            </div>
-                            <div class="skills-bar">
-                                <div class="skills-track"></div>
-                            </div>
-                            <div class="useful-links">
-                                <a href="#">View my Projects</a>
-                                <a href="#">Download my CV</a>
+                        <div class="phone-indicators">
+                            <div class="signal">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
                         </div>
-                        <!-- Terminal Content -->
-                        <div class="content-r">
-                            <div class="terminal-container searchable">
-                                <div class="terminal-nav">
-                                    <h2 class="tnav-header">Portfolio</h2>
-                                </div>
-                                <div class="terminal-body">
-                                    <p>$name: <span class="p-name"><em>Jason Dewhurst</em></span></p>
-                                    <p>$time: <span class="p-time"><em>Under 6 months, currently completing a career change.</em></span>
-                                    <p>$certifications: <span class="p-certs"><em>Level 4 BCS Accredited Full Stack Development</em></span></p>
-                                    <p>$work type: <span class="p-type"><em>Freelance & Remote/Hybrid, willing to volunteer to help charities.</em></span></p>
-                                </div>
-                            </div>
+                        <div class="battery">
+                            <div class="battery-level"></div>
                         </div>
                     </div>
-                </div>
-                </div>
-            </section>
-            <!-- Standalone mobile, Skills & Projects -->
-            <section class="middle-container">
-                <!-- Mobile Area -->
-                <div class="left-column">
-                    <h2 class="leftc-header searchable">Responsive Zone</h2>
+                    <!-- Header Group -->
+                    <div class="hc-header-group">
+                        <span class="rz-frame-label">RESPONSIVE ZONE //</span>
+                        <h2 class="hero-title searchable highlight">Modern Portfolio</h2>
+                        <h2 class="hero-title2 searchable">Developer Systems</h2>
+                        <h2 class="nhcontent-header">Designed for Clients, by a <br>Professional turned Developer.</h2>
+                        <h2 class="final-header">Sleek. Responsive. Accessible.</h2>
+                    </div>
+                    <hr class="form-divider">
+                    <h3 class="form-header">Search Bar</h3>
+                    <form class="search-wrapper">
+                        <input class="search-input" type="search" placeholder="Search my Portfolio..">
+                        <button type="submit" class="search-button">Submit</button>
+                    </form>
                     <div class="search-results"></div>
-                </div>
-                <!-- Multi Wrapper -->
-                <div class="right-wrapper">
-                    <div class="lr-wrapper">
-                        <!-- skills -->
-                        <div class="left-body">
-                            <h2 class="skills-header searchable">Complete Skills</h2>
-                            <div class="skill-filters">
-                                <button class="skill-filter" data-category="frontend">Client Side</button>
-                                <button class="skill-filter" data-category="backend">Server Side</button>
-                                <button class="skill-filter" data-category="database">Database</button>
-                                <button class="skill-filter" data-category="style">Style</button>
-                                <button class="skill-filter" data-category="responsive">Reponsive</button>
-                                <button class="skill-filter" data-category="tools">Tools Used</button>
-                            </div>
-                            <div class="skills-container">
-                                <div class="skill-card searchable" data-skills="frontend">
-                                    <p>HTML</p>
-                                </div>
-                                <div class="skill-card searchable" data-skills="frontend style responsive">
-                                    <p>CSS</p>
-                                </div>
-                                <div class="skill-card searchable" data-skills="frontend">
-                                    <p>JavaScript</p>
-                                </div>
-                                <div class="skill-card searchable" data-skills="frontend responsive">
-                                    <p>BootStrap</p>
-                                </div>
-                                <div class="skill-card searchable" data-skills="frontend style">
-                                    <p>jQuery</p>
-                                </div>
-                                <div class="skill-card searchable" data-skills="backend">
-                                    <p>Node.js & Express</p>
-                                </div>
-                                <div class="skill-card searchable" data-skills="database">
-                                    <p>MySQL</p>
-                                </div>
-                                <div class="skill-card searchable" data-skills="frontend">
-                                    <p>React</p>
-                                </div>
-                                <div class="skill-card searchable" data-skills="frontend tools">
-                                    <p>Git</p>
-                                </div>
-                                <div class="skill-card searchable" data-skills="frontend tools">
-                                    <p>GitHub</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Projects -->
-                        <div class="right-body">
-                            <h2 class="rcontent-header searchable">Featured Projects</h2>
-                            <p class="rcontent-paragraph">Here is a selection of recent projects showcasing my experience across FrontEnd Development, API Integration, server-side applications and databases. This portfolio itself demonstrates my talents with responsive design, UI development and client-side interaction.</p>
-                            <div class="group-project searchable">
-                                <h2 class="gp-header">Parrot Application</h2>
-                            </div>
-                            <div class="solop-Note searchable">
-                                <h2 class="sp-header">Note Taker Application</h2>
-                            </div>
-                            <div class="solop-mysql searchable">
-                                <h2 class="spm-header">MySql Application</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Certifications & TBA -->
-                    <div class="bottom-wrapper">
-                        <div class="left-container searchable">
-                            <h2 class="lc-header">My Journey into Web Development</h2>
-                        </div>
-                        <div class="mid-container">
-                            <h2 class="mc-header searchable">Certifications</h2>
-                            <p>Currently I am starting out in the industry but I do have some useful certifications, these do help me out a lot around computer systems and principles so I have listed them below.</p>
-                            <ul class="cert-list">
-                                <li class="searchable">ph</li>
-                                <li class="searchable">ph</li>
-                                <li class="searchable">ph</li>
-                                <li class="searchable">ph</li>
-                                <li class="searchable">ph</li>
-                                <li class="searchable">ph</li>
-                            </ul>
-                        </div>
-                        <div class="right-container">
-                            <h2 class="rc-header searchable">My Workflow Plans</h2>
-                            <p>This is a list in order of steps I follow when making projects for my clients and teams I am a part off.</p>
-                            <ol class="plans-list">
-                                <li class="searchable">ph</li>
-                                <li class="searchable">ph</li>
-                                <li class="searchable">ph</li>
-                                <li class="searchable">ph</li>
-                                <li class="searchable">ph</li>
-                                <li class="searchable">ph</li>
-                            </ol>
+                    <hr class="post-search-resultshr">
+                    <div class="key-info">
+                        <h2 class="help-info"><em><strong>Helpful Information</strong></em></h2>
+                        <div class="pg-profile">
+                            <p class="search-help">Search Results will be displayed below the search bar, in button format giving you direct access as clickable results.</p>
+                            <p class="profile-info">The section to the right is holding four different types of content, the tabs control the active states and displays which button is active.</p>
+                            <p class="profile-info">The terminal has functional run button which disables on script launch and has a state so it can be repeated, this has to be my favourite addition to the website.</p>
                         </div>
                     </div>
                 </div>
-            </section>
-            
-        </main>
-        <!-- <script src="./assets/js/search-bar.js"></script> -->
-        <script src="./assets/js/skills-ticker.js"></script>
-        <script src="./assets/js/skills.js"></script>
-    </body>
-    
+                <div class="side-zone-wrapper">
+                    <div class="side-zone-container">
+                        <div class="side-zone-inner">
+                            <h2 class="sz-header">Contact Zone</h2>
+                            <p>Well you have seen my portfolio and I hope you liked it, if you would like to contact me for work or website related reasons then you can contact me by completing this form.</p>
+                            <form action="https://formspree.io/f/xnpjbgdb" method="post" class="contact-form">
+                                <div class="form-wrapper">
+                                    <div class="form-container">
+                                        <div class="input-group">
+                                            <label for="fname">First Name</label>
+                                            <input type="text" id="fname" name="fname" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="lname">Last Name</label>
+                                            <input type="text" id="lname" name="lname" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" id="email" name="email" required>
+                                        </div>
+                                        <fieldset class="cb">
+                                            <legend class="cb-question">Reason for contact?</legend>
+                                            <div class="cb-group">
+                                                <label class="cb-option">
+                                                    <input type="checkbox" name="reason" value="website-design"><span>Website Design</span>
+                                                </label>
+                                                <label class="cb-option">
+                                                    <input type="checkbox" name="reason" value="work-experience"><span>Work Experience</span>
+                                                </label>
+                                                <label class="cb-option">
+                                                    <input type="checkbox" name="reason" value="collaboration"><span>Collaboration</span>
+                                                </label>
+                                                <label class="cb-option">
+                                                    <input type="checkbox" name="reason" value="volunteer-work"><span>Volunteer Placements</span>
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                        <div class="message-container">
+                                            <label for="message">Send a message!</label>
+                                            <textarea id="message" name="message" rows="7"></textarea>
+                                        </div>
+                                        <button type="submit">Send Message</button>
+                                        <div class="form-status"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-wrapper">
+                <nav class="nav-wrapper">
+                    <div class="nav-container">
+                        <div class="nav-inner">
+                            <div class="inner-pill">
+                                <div class="nav-container-main">
+                                    <a href="#">Home</a>
+                                    <a href="#">About</a>
+                                    <a href="#">Projects</a>
+                                    <a href="#">Skills</a>
+                                </div>
+                                <div class="nav-container-social">
+                                    <a href="#">Contact</a>
+                                    <div class="li-img"><a href="https://www.linkedin.com/in/jay-dewhurst/">
+                                    <img src="./assets/images/trans-li.png"><span >LinkedIn</span></a></div>
+                                </div>
+                                <div class="nav-clock">
+                                    <div class="clock-label">
+                                        <p class="label-cl"><span>Current Time</span></p>
+                                    </div>
+                                    <div class="clock-unit">
+                                        <span class="clock-hours"></span>
+                                    </div>
+                                    <span class="clock-seperator">:</span>
+                                    <div class="clock-unit">
+                                        <span class="clock-minutes"></span>
+                                    </div>
+                                    <span class="clock-seperator">:</span>
+                                    <div class="clock-unit">
+                                        <span class="clock-seconds"></span>
+                                    </div>
+                                    <div class="clock-date"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <article class="tablet-wrapper">
+                    <div class="tablet-container">
+                        <div class="tablet-inner">
+                            <div class="profile-tab-container">
+                                <button type="button" data-tab="about" class="tab-btn active">
+                                    <span>About Me</span>
+                                    <small>Story &amp; Profile</small>
+                                </button>
+                                <button type="button" data-tab="work" class="tab-btn">
+                                    <span>My Work</span>
+                                    <small>Projects &amp; Skills</small>
+                                </button>
+                            </div>
+                            <div class="profile-container active" data-tab="about">
+                                <div class="profile-content">
+                                    <h2 class="profile-header">About Me</h2>
+                                    <div class="abparagraph-group">
+                                        <p class="about-paragraph">Hi, I'm Jason, a Developer focused on building responsive web applications and user interfaces, with experience across Front-End, server-side and database projects.</p>
+                                        <p class="about-paragraph">Through my Level 4 BCS-Accredited Full Stack Web Development course, I've built projects independently and as part of a team, turning what I've learned into working applications. I enjoy figuring out how things work, solving problems and improving each project as my skills develop. That practical approach is a big part of what drew me towards a career in development.</p>
+                                        <p class="about-paragraph-m"><em>I recently completed a career change from Logistics, bringing with me strong planning skills and an excellent eye for detail. I'm really passionate about creating projects, collaborating with others and delivering an excellent reliable service to all my clients and future contacts.</em></p>
+                                    </div>
+                                </div>
+                                <div class="or-spacer-vertical">
+                                    <div class="mask"></div>
+                                </div>
+                                <div class="profile-content-r">
+                                    <div class="terminal">
+                                        <button type="button" class="terminal-run">Run</button>
+                                        <div class="terminal-dots-profile">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="terminal-header">
+                                            <p class="t-pgraph"></p>
+                                        </div>
+                                        <div class="terminal-body">
+                                            <div class="terminal-entry visible">
+                                                <div class="terminal-line">
+                                                    <span class="t-prompt">jason@Portfolio ~ $</span>
+                                                    <span class="t-command" data-command="whoami"></span>
+                                                </div>
+                                                <div class="terminal-output">
+                                                    <span class="t-output1">Jason - </span><span class="t-output2">Website Developer</span>
+                                                </div>
+                                            </div>
+                                            <div class="terminal-entry">
+                                                <div class="terminal-line">
+                                                    <span class="t-prompt">jason@Portfolio ~ $</span>
+                                                    <span class="t-command" data-command="cat developer.json"></span>
+                                                </div>
+                                                <div class="terminal-output terminal-json">
+<pre>{
+    <span class="pre-json">"focus": </span>["Front-End", "Responsive Interfaces"],
+    <span class="pre-json">"availability": </span>"Open to all opportunities"
+}</pre>
+                                                </div>
+                                            </div>
+                                            <div class="terminal-entry">
+                                                <div class="terminal-line">
+                                                    <span class="t-prompt">jason@Portfolio ~ $</span>
+                                                    <span class="t-command" data-command="ls ./projects"></span>
+                                                </div>
+                                                <div class="terminal-output terminal-projects">
+                                                    <div class="tick-box">
+                                                        <span class="tick">✔</span>
+                                                        <span class="status-pr">Portfolio</span>
+                                                    </div>
+                                                    <div class="tick-box">
+                                                        <span class="tick">✔</span>
+                                                        <span class="status-pr">Parrot-App</span>
+                                                    </div>
+                                                    <div class="tick-box">
+                                                        <span class="tick">✔</span>
+                                                        <span class="status-pr">MySQL Stack</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="terminal-entry">
+                                                <div class="terminal-line">
+                                                    <span class="t-prompt">jason@Portfolio ~ $</span>
+                                                    <span class="t-command" data-command="git status"></span>
+                                                </div>
+                                                <div class="terminal-output terminal-status">
+                                                    <p><span class="status-p">On branch: </span>Portfolio</p>
+                                                    <p><span class="status-p">Learning: </span>JavaScript</p>
+                                                    <p><span class="status-p">Developing: </span>Front-End Projects</p>
+                                                    <p><span class="status-p">Status: </span>Complete!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pscontent-wrapper" data-tab="work">
+                                <div class="header-box">
+                                    <h2 class="fprojects">Featured Projects</h2>
+                                </div>
+                                <div class="project-skills-wrapper">
+                                    <div class="project-one">
+                                        <h2 class="parrot-h2">Project Parrot</h2>
+                                        <div class="p-group">
+                                            <p><span class="parrot-h">Project Title: </span><span class="parrot-p"> Parrot Persona Transform Application</span></p>
+                                            <p><span class="parrot-h">Tech Stack Used: </span><span class="parrot-p"> API Integration, HTML, CSS, JavaScript</span></p>
+                                            <p><span class="parrot-h">Project Duration: </span><span class="parrot-p"> Two Days</span></p>
+                                            <p><span class="parrot-h">Project Type: </span><span class="parrot-p"> Collaborative Project, three person team of Developers formed on the day.</span></p>
+                                        </div>
+                                        <div class="p-links">
+                                            <a href="https://github.com/Vibecoder123/w5-app">GitHub Repository</a>
+                                            <a href="https://vibecoder123.github.io/w5-app">Live Page</a>
+                                        </div>
+                                    </div>
+                                    <div class="project-two">
+                                        <h2 class="mysql-h2 searchable">Project MySQL Stack</h2>
+                                        <div class="p-group1">
+                                            <p><span class="mysql-h">Project Title: </span><span class="mysql-p"> MySQL FullStack</span></p>
+                                            <p><span class="mysql-h">Tech Stack Used: </span><span class="mysql-p"> API Integration, CRUD Endpoints, HTML & CSS, JavaScript, Node.js</span></p>
+                                            <p><span class="mysql-h">Project Duration: </span><span class="mysql-p"> Seven Days</span></p>
+                                            <p><span class="mysql-h">Project Type: </span><span class="mysql-p"> Single focused project</span></p>
+                                        </div>
+                                        <div class="p-links">
+                                            <a href="https://github.com/VelzCode/MySQL">GitHub Repository</a>
+                                            <a href="https://week-8-sql.onrender.com/">Live Page</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-container-bottom">
+                                <div class="or-spacer">
+                                    <div class="mask"></div>
+                                </div>
+                                <article class="skills-wrapper">
+                                    <h2 class="skills-header">Complete Skills</h2>
+                                    <div class="skills-container">
+                                        <h2 class="comp-area">Competency Levels</h2>
+                                        <p>During the completion of my Level 4 BCS Accredited Full Stack Development course, I gained exposure and experience with quite a few languages and technology stacks. I also used a few platforms for hosting and a few useful tools for my role as a Developer, I have listed them in categories below with a level of competency for each.</p>
+                                        <div class="comp-group">
+                                            <div class="left-container">
+                                                <h2 class="front-end">Client Side Skills</h2>
+                                                <div class="ls-grid-box">
+                                                    <div class="skill-grid-container">
+                                                        <div class="skill-grid">
+                                                            <span class="grid-head1">Tech Stack</span>
+                                                            <span class="grid-head">Level</span>
+
+                                                            <span class="sk-name">HTML</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="conf">Confident</span>
+                                                            </span>
+                                                            
+                                                            <span class="sk-name">CSS</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="conf">Confident</span>
+                                                            </span>
+
+                                                            <span class="sk-name">Responsive</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="conf">Confident</span>
+                                                            </span>
+
+                                                            <span class="sk-name">Bootstrap & jQuery</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid2">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="wk-know">Working knowledge</span>
+                                                                </span>
+                                                            </span>
+
+                                                            <span class="sk-name">JavaScript</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid2">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="wk-know">Working knowledge</span>
+                                                            </span>
+
+                                                            <span class="sk-name">React</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid2">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="wk-know">Working knowledge</span>
+                                                            </span>
+
+                                                            <span class="sk-name">WordPress</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid1">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="curr-lear">Currently learning</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="right-container">
+                                                <h2 class="back-end">Server Side Skills</h2>
+                                                <div class="rs-grid-box">
+                                                    <div class="skill-grid-container">
+                                                        <div class="skill-grid">
+                                                            <span class="grid-head1">Tech Stack</span>
+                                                            <span class="grid-head">Level</span>
+
+                                                            <span class="sk-name">GitHub</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="conf">Confident</span>
+                                                            </span>
+
+                                                            <span class="sk-name">Render</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="conf">Confident</span>
+                                                            </span>
+
+                                                            <span class="sk-name">API/CRUD</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid2">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="wk-know">Working knowledge</span>
+                                                            </span>
+                                                            
+                                                            <span class="sk-name">Node.js</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid2">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="wk-know">Working knowledge</span>
+                                                            </span>
+
+                                                            <span class="sk-name">Git</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid2">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="wk-know">Working knowledge</span>
+                                                            </span>
+
+                                                            <span class="sk-name">MySQL</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid1">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="curr-lear">Currently learning</span>
+                                                            </span>
+
+                                                            <span class="sk-name">PHP</span>
+                                                            <span class="condot-block">
+                                                                <div class="terminal-dots-grid1">
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                <span class="curr-lear">Currently learning</span>
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skills-ticker">
+                                        <div class="skills-track"></div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <footer class="footer">© 2026 Jason Dewhurst. Personal Portfolio. All Rights Reserved.</footer>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/clock.js"></script>
+    <script src="./assets/js/search-bar.js"></script>
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/skills-ticker.js"></script>
+    <script src="./assets/js/tabs.js"></script>
+    <script src="./assets/js/terminal.js"></script>
+</body>
 </html>
+
+<!-- Disabled for Future Use
+    <article class="tablet-wrapper-skills">
+        <div class="tablet-container-skills">
+            <div class="tablet-inner-skills">
+                <h2 class="skills-header searchable">Complete Skills</h2>
+                <div class="skill-filters">
+                    <button class="skill-filter" data-category="frontend">Client Side</button>
+                    <button class="skill-filter-center" data-category="backend">Server Side</button>
+                    <button class="skill-filter-center" data-category="database">Database</button>
+                    <button class="skill-filter-center" data-category="style">Style</button>
+                    <button class="skill-filter-center" data-category="responsive">Reponsive</button>
+                    <button class="skill-filter-tools" data-category="tools">Tools Used</button>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-card searchable" data-skills="frontend">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-card searchable" data-skills="frontend style responsive">
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-card searchable" data-skills="frontend">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-card searchable" data-skills="frontend responsive">
+                        <p>BootStrap</p>
+                    </div>
+                    <div class="skill-card searchable" data-skills="frontend style">
+                        <p>jQuery</p>
+                    </div>
+                    <div class="skill-card searchable" data-skills="backend">
+                        <p>Node.js & Express</p>
+                    </div>
+                    <div class="skill-card searchable" data-skills="database">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="skill-card searchable" data-skills="frontend">
+                        <p>React</p>
+                    </div>
+                    <div class="skill-card searchable" data-skills="frontend tools">
+                        <p>Git</p>
+                    </div>
+                    <div class="skill-card searchable" data-skills="frontend tools">
+                        <p>GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="or-spacer-vertical left">
+  <div class="mask"></div>
+</div>
+
+<div class="or-spacer-vertical right">
+  <div class="mask"></div>
+</div>
+
+-->

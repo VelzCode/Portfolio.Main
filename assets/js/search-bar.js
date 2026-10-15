@@ -7,7 +7,6 @@ searchForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const searchTerm = searchInput.value.trim().toLowerCase();
         
-
     if (searchTerm === "") {
         return;
     }
@@ -34,11 +33,31 @@ searchForm.addEventListener("submit", (event) => {
         }
     });
 
+    const matchTotal = matches.length;
+
+    if (matchTotal === 0) {
+        searchResults.textContent = "No results found, please try again";
+        return;
+    }
+
     searchResults.innerHTML = "";
     matches.forEach((match) => {
-        const resultItem = document.createElement("div");
+        const resultItem = document.createElement("button");
         resultItem.classList.add("search-result");
         resultItem.textContent = match.textContent.trim();
+        resultItem.addEventListener("click", () => {
+            const panel = match.closest(".pscontent-wrapper");
+            if (panel) {          
+                const tabName = panel.dataset.tab;
+                const tabButton = document.querySelector(`.tab-btn[data-tab="${tabName}"]`);
+                    tabButton.click();
+            }
+            match.classList.add("highlight");
+            setTimeout(() => {
+                match.classList.remove("highlight");
+            }, 2000);
+            match.scrollIntoView();
+        });
         searchResults.appendChild(resultItem);
     });
 });
