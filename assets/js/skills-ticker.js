@@ -6,7 +6,7 @@ const skills = [
     { name: "Postman", icon: "./assets/images/skills/postman.svg" },
     { name: "Node.js", icon: "./assets/images/skills/nodejs.svg" },
     { name: "MySQL", icon: "./assets/images/skills/mysql.svg" },
-    { name: "React JSX", icon: "./assets/images/skills/React.svg" },
+    { name: "React JSX", icon: "./assets/images/skills/react.svg" },
     { name: "Render", icon: "./assets/images/skills/render-light.svg" },
     { name: "Git", icon: "./assets/images/skills/git.svg" },
     { name: "GitHub", icon: "./assets/images/skills/github-light.svg" },

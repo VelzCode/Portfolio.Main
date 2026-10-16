@@ -58,7 +58,7 @@
                 </div>
                 <div class="side-zone-wrapper">
                     <div class="side-zone-container">
-                        <div class="side-zone-inner">
+                        <div class="side-zone-inner" id="contact">
                             <h2 class="sz-header">Contact Zone</h2>
                             <p>Well you have seen my portfolio and I hope you liked it, if you would like to contact me for work or website related reasons then you can contact me by completing this form.</p>
                             <form action="https://formspree.io/f/xnpjbgdb" method="post" class="contact-form">
@@ -112,32 +112,34 @@
                         <div class="nav-inner">
                             <div class="inner-pill">
                                 <div class="nav-container-main">
-                                    <a href="#">Home</a>
-                                    <a href="#">About</a>
-                                    <a href="#">Projects</a>
-                                    <a href="#">Skills</a>
+                                    <a href="#" class="current">Home</a>
+                                    <a href="#about" id="nav-about">About</a>
+                                    <a href="#work" id="nav-work">Projects</a>
+                                    <a href="#skills">Skills</a>
                                 </div>
                                 <div class="nav-container-social">
-                                    <a href="#">Contact</a>
+                                    <a href="#contact" class="contact-a">Contact</a>
                                     <div class="li-img"><a href="https://www.linkedin.com/in/jay-dewhurst/">
-                                    <img src="./assets/images/trans-li.png"><span >LinkedIn</span></a></div>
+                                    <img src="./assets/images/trans-li.png" alt=""><span>LinkedIn</span></a></div>
                                 </div>
                                 <div class="nav-clock">
                                     <div class="clock-label">
                                         <p class="label-cl"><span>Current Time</span></p>
                                     </div>
-                                    <div class="clock-unit">
-                                        <span class="clock-hours"></span>
+                                    <div class="clock-container">
+                                        <div class="clock-unit">
+                                            <span class="clock-hours"></span>
+                                        </div>
+                                        <span class="clock-seperator">:</span>
+                                        <div class="clock-unit">
+                                            <span class="clock-minutes"></span>
+                                        </div>
+                                        <span class="clock-seperator">:</span>
+                                        <div class="clock-unit">
+                                            <span class="clock-seconds"></span>
+                                        </div>
                                     </div>
-                                    <span class="clock-seperator">:</span>
-                                    <div class="clock-unit">
-                                        <span class="clock-minutes"></span>
-                                    </div>
-                                    <span class="clock-seperator">:</span>
-                                    <div class="clock-unit">
-                                        <span class="clock-seconds"></span>
-                                    </div>
-                                    <div class="clock-date"></div>
+                                    <!--<div class="clock-date"></div>-->
                                 </div>
                             </div>
                         </div>
@@ -156,7 +158,7 @@
                                     <small>Projects &amp; Skills</small>
                                 </button>
                             </div>
-                            <div class="profile-container active" data-tab="about">
+                            <div class="profile-container active" data-tab="about" id="about">
                                 <div class="profile-content">
                                     <h2 class="profile-header">About Me</h2>
                                     <div class="abparagraph-group">
@@ -237,7 +239,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pscontent-wrapper" data-tab="work">
+                            <div class="pscontent-wrapper" data-tab="work" id="work">
                                 <div class="header-box">
                                     <h2 class="fprojects">Featured Projects</h2>
                                 </div>
@@ -270,7 +272,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="profile-container-bottom">
+                            <div class="profile-container-bottom" id="skills">
                                 <div class="or-spacer">
                                     <div class="mask"></div>
                                 </div>
@@ -326,7 +328,6 @@
                                                                     <span></span>
                                                                 </div>
                                                                 <span class="wk-know">Working knowledge</span>
-                                                                </span>
                                                             </span>
 
                                                             <span class="sk-name">JavaScript</span>
@@ -438,7 +439,6 @@
                                                                     <span></span>
                                                                 </div>
                                                                 <span class="curr-lear">Currently learning</span>
-                                                                </span>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -464,6 +464,7 @@
     <script src="./assets/js/skills-ticker.js"></script>
     <script src="./assets/js/tabs.js"></script>
     <script src="./assets/js/terminal.js"></script>
+    <script src="./assets/js/navid.js"></script>
 </body>
 </html>
 
