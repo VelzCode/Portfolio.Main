@@ -1,14 +1,6 @@
-const now = new Date();
 const clockHours = document.querySelector(".clock-hours");
 const clockMinutes = document.querySelector(".clock-minutes");
 const clockSeconds = document.querySelector(".clock-seconds");
-const currentHour = now.getHours();
-const currentMinutes = now.getMinutes();
-const currentSeconds = now.getSeconds();
-
-clockHours.textContent = currentHour;
-clockMinutes.textContent = currentMinutes;
-clockSeconds.textContent = currentSeconds;
 
 function updateClock() {
     const now = new Date();
@@ -21,5 +13,5 @@ function updateClock() {
     clockMinutes.textContent = currentMinutes;
     clockSeconds.textContent = currentSeconds;
 }
-
+updateClock();
 setInterval(updateClock, 1000);

@@ -24,7 +24,7 @@ searchForm.addEventListener("submit", (event) => {
             isMatch = itemText.includes(searchTerm);
         } else {
             isMatch = words.some((word) => {
-                return word === searchTerm;
+                return word.replace(/^\W+|\W+$/g, "") === searchTerm;
             });
         }
  

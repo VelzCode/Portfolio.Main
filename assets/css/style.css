@@ -5,6 +5,7 @@
     --navbar-background: #171923;
     --dark-border-color: #080c12;
     --dark-border-color2: #a75d59;
+    --highlight-search: #2d288a;
     --text-color: #edf0f5;
     --alt-text: #bac3cf;
     --highlights: #a497cb;
@@ -213,7 +214,7 @@ body {
 
 .hero-container img {
     display: block;
-    height: 750px;
+    height: 820px;
 }
 
 .phone-status {
@@ -338,10 +339,16 @@ body {
 .pg-profile {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
+    line-height: 1.2rem;
 }
 
-
+.width-box-p {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    line-height: 1rem;
+}
 
 .li-img {
     display: flex;
@@ -608,6 +615,7 @@ body {
 
 /* HEADERS */
 .rz-frame-label {
+    scroll-margin-top: -50px;
     color: var(--highlights);
     font-size: 1rem;
     font-weight: 500;
@@ -1479,7 +1487,7 @@ body {
 }
 
 .highlight {
-    color: var(--text-color);
+    color: var(--highlight-search);
 }
 
 .skills-bar {
