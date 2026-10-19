@@ -3,7 +3,7 @@
 A personal portfolio site built with HTML, CSS and vanilla JavaScript, presenting my projects, skills and a working contact form inside a 
 phone-and-tablet themed interface.
 
-**Live site:** [add your GitHub Pages link here](https://USERNAME.github.io/REPO-NAME/)
+**Live site:** [https://velzcode.github.io/Portfolio.Main/]
 
 ---
 
