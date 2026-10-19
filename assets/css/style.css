@@ -142,7 +142,7 @@ body {
 }
 
 .nav-container-main a:not(.current):hover,
-.nav-container-social a:not(.current):hover {
+.nav-container-social > a:not(.current):hover {
     border-bottom: 2px solid var(--text-color);
     color: var(--terminal-three);
     transform: translateY(2px) scale(1.15);
@@ -214,7 +214,7 @@ body {
 
 .hero-container img {
     display: block;
-    height: 820px;
+    height: 870px;
 }
 
 .phone-status {
